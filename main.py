@@ -58,7 +58,7 @@ if __name__ == '__main__':
         #Синанимично для севера
         #S = ((A*(v^u % N)) ^ b) % N
         S2 = pow(A * pow(v , u , N), b, N)
-        K2 = int(H(str(S2).encode()).hexdigest(), 16
+        K2 = int(H(str(S2).encode()).hexdigest(), 16)
         #С этого момента у них есть одно и то же число у обоих.
         #Чтобы подтвердить каждый генерирует подтверждение
         #M = Hash( Hash(N) XOR H(g), Hash(I), s, A, B, K)
